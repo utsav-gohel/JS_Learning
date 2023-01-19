@@ -1,6 +1,6 @@
 //In let keyword we can declare value at any point of time.
 let age;
-age = 19;
+age = 16;
 console.log(age);
 
 //In const keyword we have to assign certain value to the varibale at the time of initialization.
@@ -39,3 +39,71 @@ let age3 = 16;
 console.log(age1>age2);
 console.log(age1<age2);
 console.log(age1>=age3);
+
+//String and templetes literals
+
+//Example of string literals.
+const firstName = 'utsav'
+const job = 'developer'
+const birthYear = 2002;
+const year = 2023
+const utsav = "I'm "+firstName+',a '+(year-birthYear)+' years old '+job+'!'
+console.log(utsav);
+
+//Example of templates literals.
+const utsv = `I'm ${firstName} ,a ${year-birthYear} years old ${job} !`
+console.log(utsv);
+
+//If-Else statements 
+const isOldEnough = age>=18  //here we apply condition in variable that return true if age>=18
+console.log(age);
+if(isOldEnough){
+    console.log('You can start driving the vehicle');
+}else{
+    console.log('You can not start drive the vehicle as you below 18');
+    const currntAge = CurrentYear - birthYear
+    const data = currntAge-18
+    console.log(`You can start driving the vehicle after ${data} years`);
+}
+
+// if(age>=18){
+//     console.log('You can start driving the vehicle');
+// }else{
+//     console.log('You can not start drive the vehicle as you below 18');
+// }
+
+ //Type conversation
+ const myData = 100;
+ console.log(typeof(100),typeof(String(100)));
+ console.log(Number("utsav"));
+ console.log(typeof(NaN));
+ console.log(typeof(String(23)),typeof(23));
+
+ let n ='1'+1
+ n=n-1;
+ console.log(n);
+
+ console.log('10'-'4'-'3'-2+'5');
+
+ //Truthy and falsy values
+ const money = 0;
+ if(money){
+    console.log("Don't spend it");
+ }else{
+    console.log('You should find the resources to earn money!!');
+ }
+
+ //Logical operators
+ const hasDrivingLicense = true;
+ const hasGoodVision = false;
+ console.log(hasDrivingLicense&&hasGoodVision);
+ console.log(hasDrivingLicense||hasGoodVision);
+ console.log(!hasDrivingLicense);
+ console.log(!hasGoodVision);
+
+ const isTired = true;
+ if(hasDrivingLicense && hasGoodVision &&!isTired){
+     console.log('you able to drive');
+ }else{
+    console.log('please do not drive');
+ }
