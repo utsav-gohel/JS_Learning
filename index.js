@@ -107,3 +107,39 @@ if(isOldEnough){
  }else{
     console.log('please do not drive');
  }
+
+ //The switch statement
+ const day = 'wednesday'
+
+ switch (day) {
+    case 'monday':
+        console.log('Plan course structure');
+        break;
+    case 'tuesday' :
+        console.log('prepare theory videos');   
+        break;
+    case 'wednesday' :
+        // console.log('prepare theory videos');   
+        // break;
+    case 'thursday' :
+        console.log('write code examples');   
+        break;
+    case 'friday' :
+        console.log('Record videos');   
+        break;
+    case 'saturday' :
+        // console.log('Upload videos');   
+        // break;
+    case 'sunday' :
+        console.log('Enjoy Weekend');   
+        break;
+    default:
+        console.log('Not a valid day');
+        break;
+ }
+
+ //Ternary operators
+ const marks = 90;
+ marks >= 80 ? console.log("You passed this exam") : console.log("Please re-appear in exam");
+
+ //start with challenge 4 in challenge branch
