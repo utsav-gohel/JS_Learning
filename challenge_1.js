@@ -216,3 +216,11 @@ const bills = [125,555,44]
 const tips = [calculateTip(bills[0]),calculateTip(bills[1]),calculateTip(bills[2])] 
 const totalBill = bills[2]+tips[2]
 console.log("bills",bills,"tips",tips,"total bills of biils2",totalBill);
+
+//Internal challenge of object
+// utsav has 3 friends and his best friend is called {}
+const obj = {
+    name:"Utsav", 
+    friendName : ['f1','f2','f3']
+}
+console.log(`${obj.name} has total ${obj.friendName.length} friends and his best friend is ${obj.friendName[0]}`);
