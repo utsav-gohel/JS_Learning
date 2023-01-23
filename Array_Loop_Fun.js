@@ -131,3 +131,27 @@ if(nameFun.includes('utsav')){
   console.log("You have friend called utsav");
 }
 console.log(nameFun,nameFun.indexOf('mocha'));
+
+// Objects -- it contains key and value pair and (we can acces with (.) like name.value ,we can acces with (['']))
+const ObjExample = {
+  name : "utsav",
+  contact : 1452369787,
+  age : 2023-2001,
+  friends : ["don't want to reveal names"]
+}
+console.log(ObjExample.name);
+console.log(ObjExample['age']);
+console.log(ObjExample ['na'+'me']);
+
+let value =  "age";
+if(ObjExample[value]){
+  console.log(ObjExample[value]);
+}else{
+  console.log("not exist");
+}
+// console.log(ObjExample[value]);
+
+//We can add more object value like below
+ObjExample.email = "utsav@gmail.com"
+ObjExample['dog'] = "Samoyed"
+console.log(ObjExample);
