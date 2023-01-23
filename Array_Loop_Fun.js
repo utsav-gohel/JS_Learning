@@ -116,7 +116,7 @@ const age2 = CalcAge(bYear[1])
 const age3 = CalcAge(bYear[bYear.length-1])
 // console.log(age1,age2,age3);
 
-//Array Function -- push,pop,unshift,splice,map
+//Array Function -- push,pop,unshift,splice,map,index
 const nameFun = ['utsav','mocha']
 nameFun.push('bear')
 //Add element at first value
@@ -127,4 +127,7 @@ nameFun.pop()
 //Remove First element from array
 nameFun.shift()
 
-console.log(nameFun);
+if(nameFun.includes('utsav')){
+  console.log("You have friend called utsav");
+}
+console.log(nameFun,nameFun.indexOf('mocha'));
