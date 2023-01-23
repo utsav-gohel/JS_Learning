@@ -83,3 +83,48 @@ const yearsUntilRetirement = function (birthYeah, firstName) {
 }
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
+
+// Arrays 
+// declaration type -1 
+const friends = ['Utsav','wooyoo','mocha','Apollo']
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends.length);
+//declaration type -2 
+const years = new Array(1991,1992,1984,2002)
+console.log(friends[friends.length-2]);
+
+//change elemenets in array  (we can do changes in array even if it is declare with const as it is not primitive data type)
+friends[4] = "teddy"
+friends[2] = "atlas"
+// console.log(friends);
+
+//Different Expermiment with Array.
+const myname = "Utsav";
+const ExArray = [myname,"hey",1212-100,friends]
+console.log(ExArray);
+
+const CalcAge = function(birthYear){
+  const age = 2023-birthYear
+  console.log(age);
+}
+
+const bYear = [1991,2002,1998]
+const age1 = CalcAge(bYear[0])
+const age2 = CalcAge(bYear[1])
+const age3 = CalcAge(bYear[bYear.length-1])
+// console.log(age1,age2,age3);
+
+//Array Function -- push,pop,unshift,splice,map
+const nameFun = ['utsav','mocha']
+nameFun.push('bear')
+//Add element at first value
+nameFun.unshift("Hey")
+//Remove Last element from array
+nameFun.pop()
+
+//Remove First element from array
+nameFun.shift()
+
+console.log(nameFun);
