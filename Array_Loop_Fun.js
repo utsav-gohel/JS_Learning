@@ -171,4 +171,34 @@ const methodObject = {
 }
 methodObject.getsummary();
 
+//Different Loops in JS
 
+//For Loops
+for(let id =1; id<=3;id++){
+  console.log(`my id is ${id}`);
+}
+
+const LoopArray = [
+  'Utsav',
+  1236547896,
+  'utsav@gmail.com',
+  ['ABCD','EFGH','IJKL']
+]
+console.log("--------------------------------");
+for(let i = 0; i<LoopArray.length;i++){
+  console.log(LoopArray[i]);
+}
+console.log("--------------------------------");
+
+let ValueYears =[2002,1990,1991,2002]
+const ages = []
+for(let i=0;i<ValueYears.length;i++){ 
+  ages.push(2023-ValueYears[i])
+}
+console.log(ages);
+console.log("--------------------------------");
+for(let i=0;i<LoopArray.length;i++){
+  if(typeof LoopArray[i] !== String) continue;
+
+  console.log(LoopArray[i],typeof LoopArray[i]);
+}
