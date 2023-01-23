@@ -155,3 +155,20 @@ if(ObjExample[value]){
 ObjExample.email = "utsav@gmail.com"
 ObjExample['dog'] = "Samoyed"
 console.log(ObjExample);
+
+// Method in objects.
+const methodObject = {
+  firstName : "utsav",
+  driverLicense : false,
+  myAge : function(birthYear){
+    const myage = 2023-birthYear;
+    console.log(myage);
+    return myage
+  },
+  getsummary :function(){
+    console.log(`${this.firstName} is a ${this.myAge(2002)} years old developer, and he has ${this.driverLicense == true? "a driving license":"not driving license"}`);
+  }
+}
+methodObject.getsummary();
+
+
