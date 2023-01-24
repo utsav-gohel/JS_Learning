@@ -197,8 +197,35 @@ for(let i=0;i<ValueYears.length;i++){
 }
 console.log(ages);
 console.log("--------------------------------");
-for(let i=0;i<LoopArray.length;i++){
-  if(typeof LoopArray[i] !== String) continue;
+// for(let i=0;i<LoopArray.length;i++){
+//   if(typeof LoopArray[i] !== String) continue;
+  
+//   console.log(LoopArray[i],typeof LoopArray[i]);
+// }
+console.log("--------------------------------");
+for(let i=LoopArray.length-1;i>=0;i--){
+  console.log(LoopArray[i]);
+}
 
-  console.log(LoopArray[i],typeof LoopArray[i]);
+console.log("--------------------------------");
+for(let i=1;i<3;i++){
+  console.log(`-----Started Exercsie ${i} -----`);
+  for(let j=1;j<3;j++){
+    console.log(`-----Started weight Lifting ${j} -----`);
+  }
+}
+console.log("--------------------------------");
+let u = 0;
+while(u<=3){
+  console.log("While Loop Running",u);
+  u++;
+}
+
+console.log("---------------Dice rolling-----------------");
+let dice = Math.trunc(Math.random()*6)+1;
+
+while(dice !== 6){
+  console.log("Dice value",dice);
+  dice = Math.trunc(Math.random()*6)+1
+  dice == 6 ? console.log("Loop about to end") : undefined
 }
