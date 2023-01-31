@@ -233,7 +233,7 @@
 // }, 5000);
 
 //Try and catch won't work in settimeout methods, we have to write try and catch within the settimeout function
-//this will throw an error
+//this will throw an error as this method won't able to handle errors because we are running script after 2 sec.
 // try {
 //   setTimeout(() => {
 //     console.log(rahul);
@@ -244,14 +244,39 @@
 // }
 
 //this will handle error as we are writing try and catch inside settimeout
-try {
-  setTimeout(() => {
-    try {
-      console.log(rahul);
-    } catch (e) {
-      console.log("error " + e);
-    }
-  }, 2000);
-} catch (error) {
-  console.log("error " + error);
-}
+// try {
+//   setTimeout(() => {
+//     try {
+//       console.log(rahul);
+//     } catch (e) {
+//       console.log("error " + e);
+//     }
+//   }, 2000);
+// } catch (error) {
+//   console.log("error " + error);
+// }
+
+//Errors objects
+
+// try {
+//   // console.log(utsav);
+//   throw new ReferenceError("inside block of refError");
+// } catch (error) {
+//   console.log(error.name);
+//   console.log(error.message);
+//   console.log(error.stack);
+// }
+
+//custom errors
+// try {
+//   let age = prompt("enter your age");
+//   age = Number.parseInt(age);
+//   if (age > 130) {
+//     throw new ReferenceError("INVALID AGE");
+//   }
+// } catch (e) {
+//   console.log(e.name);
+//   console.log(e.message);
+//   console.log(e.stack);
+// }
+// console.log("script still runnig");
