@@ -280,3 +280,84 @@
 //   console.log(e.stack);
 // }
 // console.log("script still runnig");
+
+//Finally clause block
+
+// try {
+//   let a = 0;
+//   console.log(program);
+//   console.log("in to try block");
+// } catch (error) {
+//   console.log("inside catch block ", error);
+// } finally {
+//   console.log("In the finally block, this is default block");44150.4141
+// }
+
+// Challenge-1
+// Write a program to load a javascript file in a browser using promises. Use .then() to display an alert when loading is complete.
+// const loadSrc = async (src) => {
+//   let p1 = new Promise((resolve, reject) => {
+//     let script = document.createElement("script");
+//     script.src = src;
+//     document.body.appendChild(script);
+//     resolve(src);
+//   }).then((val) => {
+//     console.log("script loaded with " + val);
+//   });
+// };
+
+// let srcVal = loadSrc(
+//   "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+// );
+// console.log(srcVal);
+
+// Challenge-2
+// const p2 = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       reject(new Error("This is unacceptable"));
+//     }, 3000);
+//   });
+// };
+// let a = async () => {
+//   try {
+//     let val = await p2();
+//     console.log(val);
+//   } catch (e) {
+//     console.log("error while loading ");
+//   }
+// };
+// a();
+
+// Challenge-3
+// const p1 = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(10);
+//     }, 1000);
+//   });
+// };
+// const p2 = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(20);
+//     }, 2000);
+//   });
+// };
+// const p3 = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(30);
+//     }, 3000);
+//   });
+// };
+
+// const run = async () => {
+//   let a1 = p1();
+//   let a2 = p2();
+//   let a3 = p3();
+
+//   const a1a2a3 = await Promise.all([a1, a2, a3]);
+//   console.log(a1a2a3);
+// };
+// run();
