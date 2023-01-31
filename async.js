@@ -160,18 +160,98 @@
 //   // document.body.style.backgroundColor = "red"
 // });
 
-let button = document.getElementById("btn");
-let id1 = document.getElementById("id1");
-const blue = () => {
-  document.getElementById("btn").style.backgroundColor = "blue";
-};
-const red = () => {
-  // document.getElementById("btn").style.backgroundColor = "blue";
-  document.getElementById("id1").style.backgroundColor = "red";
-  // document.body.style.backgroundColor = "red";
-};
+// let button = document.getElementById("btn");
+// let id1 = document.getElementById("id1");
+// const blue = () => {
+//   document.getElementById("btn").style.backgroundColor = "blue";
+// };
+// const red = () => {
+//   document.getElementById("id1").style.backgroundColor = "red";
+//   // document.body.style.backgroundColor = "red";
+// };
 
 // button.addEventListener("click", blue);
 // id1.addEventListener("click", () => {
 //   document.getElementById("id1").classList.toggle("visible");
 // });
+
+//Async function
+// async function myfun() {
+//   return 1;
+// }
+
+//we can not use then wihtout async keyword in function
+// myfun().then((val) => {
+//   console.log(val);
+// });
+
+//Example of Async Await
+// const temp = async () => {
+//   let delhiWeather = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("26");
+//     }, 2000);
+//   });
+//   let rajkotWeather = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("16");
+//     }, 4000);
+//   });
+//   console.log("fetching delhi weather");
+//   let DelhiW = await delhiWeather;
+//   console.log("fetching rajkot weather");
+//   let rajkotW = await rajkotWeather;
+//   console.log("fetched delhi weather " + DelhiW);
+//   console.log("fetched rajkot weather " + rajkotW);
+//   return [DelhiW, rajkotW];
+// };
+// const temp1 = () => {
+//   console.log("inside Temp1 Function");
+// };
+// console.log("welcome to weather center");
+// let a = temp();
+// let b = temp1();
+// console.log(a);
+
+//Error handling --- try catch block
+// setTimeout(() => {
+//   console.log("hacking Wifi Credentials");
+// }, 2000);
+// try {
+//   console.log(utsav);
+// } catch (e) {
+//   console.log("var utsav not defined");
+// }
+// setTimeout(() => {
+//   console.log("fetching Id and password");
+// }, 3000);
+// setTimeout(() => {
+//   console.log("hacking utsv's Credentials");
+// }, 4000);
+// setTimeout(() => {
+//   console.log("Hacked Wifi Credentials");
+// }, 5000);
+
+//Try and catch won't work in settimeout methods, we have to write try and catch within the settimeout function
+//this will throw an error
+// try {
+//   setTimeout(() => {
+//     console.log(rahul);
+//     console.log("error " + e);
+//   }, 2000);
+// } catch (error) {
+//   console.log("error " + error);
+// }
+
+//this will handle error as we are writing try and catch inside settimeout
+try {
+  setTimeout(() => {
+    try {
+      console.log(rahul);
+    } catch (e) {
+      console.log("error " + e);
+    }
+  }, 2000);
+} catch (error) {
+  console.log("error " + error);
+}
