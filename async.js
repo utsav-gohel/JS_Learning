@@ -361,3 +361,34 @@
 //   console.log(a1a2a3);
 // };
 // run();
+
+//Fetch APIs
+// let DogsData = fetch("https://dog.ceo/api/breeds/image/random");
+// DogsData.then((val) => {
+//   return val.json();
+// }).then((val) => {
+//   console.log(val);
+//   console.log(val.status);
+//   console.log(val.message);
+//   console.log(val.headers);
+// });
+
+//post APIs
+// let options = {
+//   method: "POST",
+//   headers: {
+//     "Content-type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     title: "foo",
+//     body: "bar",
+//     userid: 1,
+//   }),
+// };
+// fetch("https://jsonplaceholder.typicode.com/posts", options)
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((val) => {
+//     console.log("data inserted ", val);
+//   });
